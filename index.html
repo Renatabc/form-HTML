@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Formulário</title>
 </head>
 <body>
     <form name="signup" action="bancodedados">
         Nome: <input type="text" name="Nome Completo">
-        <br>Idade: <input type="number" name="age">
+        <br>Idade: <input type="number" name="age" min="0" max="100" step="2">
         <br>Senha: <input type="password" name="password">
-        <button>Enviar</button>
+        <br>Botão: <input type="button" value="Enviar">
+        <br>Rolagem: <input type="range" min="0" max="50">
+        <br>Cores: <input type="color">
+        <br>E-mail: <input type="email">
+        <br>URL: <input type="url">
+        <br>Calendário: <input type="date">
+        <br>Calendário: <input type="datetime">
+        <br>Semana: <input type="week">
+        <br>Mês: <input type="month">
+        <br>Calendário: <input type="datetime-local">
+        <br>Checkbox: <input type="checkbox">
+        <br>Apenas uma escolha: <input type="radio">
+        <br>Hidden: <input type="hidden">
+        <br>Arquivos: <input type="file" multiple>
+        <br>Busca: <input type="search">
+        <button type="button" onclick="alert('clicado')">Enviar</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar formulário</button>
+        <select name="role">
+            <option value="">Selecione:</option>
+            <option value="">pera</option>
+            <option value="">uva</option>
+            <option value="">maçã</option>
+            <option value="">banana</option>
+            <option value="">melancia</option>
+        </select>
     </form>    
 </body>
 </html>
